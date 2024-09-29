@@ -23,7 +23,7 @@ apt-get install -y zenity
 
 # Create the update script
 print_color $GREEN "Creating update script..."
-cat > /usr/local/bin/system-update.sh << EOL
+cat > /usr/local/bin/kali-update-tool.sh << EOL
 #!/bin/bash
 
 # Function to update the progress bar
@@ -96,16 +96,16 @@ run_update_upgrade
 EOL
 
 # Make the script executable
-chmod +x /usr/local/bin/system-update.sh
+chmod +x /usr/local/bin/kal-update-tool.sh
 
 # Create desktop entry
 print_color $GREEN "Creating desktop entry..."
-cat > /usr/share/applications/system-update.desktop << EOL
+cat > /usr/share/applications/kali-update-tool.desktop << EOL
 [Desktop Entry]
 Type=Application
 Name=System Update
 Comment=Run system update and upgrade with progress bar
-Exec=/usr/local/bin/system-update.sh
+Exec=/usr/local/bin/kali-update-tool.sh
 Icon=system-software-update
 Terminal=false
 Categories=System;
