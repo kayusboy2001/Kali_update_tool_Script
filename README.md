@@ -17,12 +17,12 @@ sudo ./add-repo.sh
 
 2. Install the package:
 ```
-sudo apt install kali-update-tool
+sudo apt install system-update-tool
 ```
 
 ## Usage
 
-After installation, you should see a "Kali Update Tool" icon in your applications menu. Click it to run the update tool.
+After installation, you should see a "System Update" icon in your applications menu. Click it to run the update tool.
 The tool will prompt for your sudo password, then show a progress bar as it updates and upgrades your system.
 
 ## Note

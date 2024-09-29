@@ -1,16 +1,16 @@
-Package: kali-update-tool
+Package: system-update-tool
 Version: 1.0-1
 Architecture: all
 Maintainer: kayusboy2001 <kayusboy2001@gmail.com>
 Depends: zenity, kali-linux-core
 Filename: ./kali-update-tool_1.0-1.deb
-Size: 2116
-MD5sum: 625611d904fc04a5c80fa1c41d89afb3
-SHA1: 6a735a8fa3f2cd725be66b2495b372cb8c9804a6
-SHA256: 6d77d28b6fd503a0fc7b2c066a0bb1e47a3e15823e8b89f3ad863dfc1aac07e6
+Size: 2108
+MD5sum: d56a6c4b699f2f4f65198cb84ff6e60c
+SHA1: b25cb898dae8696265d533fc62a55c5e4c9b18a9
+SHA256: 7e42c7fca0b0ad9630b59e16d4a7c1563d2411c97867f59c4558f2533a4637f0
 Section: utils
 Priority: optional
-Description: Graphical Kali Linux update tool
+Description: Graphical System Update tool for Kali Linux
  This tool provides a simple graphical interface for
- running system updates specifically on Kali Linux.
+ running system updates on Kali Linux.
 

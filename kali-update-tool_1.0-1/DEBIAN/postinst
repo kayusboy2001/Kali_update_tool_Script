@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod +x /usr/local/bin/kali-update-tool.sh
+chmod +x /usr/local/bin/system-update-tool.sh
