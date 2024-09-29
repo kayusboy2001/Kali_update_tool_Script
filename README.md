@@ -9,15 +9,16 @@ This tool provides a simple graphical interface for running system updates and u
 You can install this tool using apt. Follow these steps:
 
 1. Download and run the repository addition script:
-   	wget https://raw.githubusercontent.com/kayusboy2001/Kali_update_tool_Script/main/add-repo.sh
- 	chmod +x add-repo.sh
-	sudo ./add-repo.sh
+```
+wget https://raw.githubusercontent.com/kayusboy2001/Kali_update_tool_Script/main/add-repo.sh
+chmod +x add-repo.sh
+sudo ./add-repo.sh
+```
 
 2. Install the package:
-	sudo apt install kali-update-tool
-   ```
-
-After installation, you should see a "System Update" icon in your applications menu.
+```
+sudo apt install kali-update-tool
+```
 
 ## Usage
 
