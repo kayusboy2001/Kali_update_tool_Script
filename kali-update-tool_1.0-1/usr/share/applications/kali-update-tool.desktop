@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kali Update Tool
+Comment=Run Kali Linux system update and upgrade with progress bar
+Exec=/usr/local/bin/kali-update-tool.sh
+Icon=system-software-update
+Terminal=false
+Categories=System;

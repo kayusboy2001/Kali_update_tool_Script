@@ -1,0 +1,10 @@
+Package: kali-update-tool
+Version: 1.0-1
+Section: utils
+Priority: optional
+Architecture: all
+Maintainer: kayusboy2001 <kayusboy2001@gmail.com>
+Description: Graphical Kali Linux update tool
+ This tool provides a simple graphical interface for
+ running system updates specifically on Kali Linux.
+Depends: zenity, kali-linux-core

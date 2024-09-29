@@ -2,26 +2,27 @@
 
 # System Update Tool
 
-This tool provides a simple graphical interface for running system updates and upgrade on Ubuntu and Debian-based systems.
+This tool provides a simple graphical interface for running system updates and upgrade on Kali Linux systems.
 
 ## Installation
 
-1. Download the `install_update_tool.sh` script.
-2. Open a terminal in the directory containing the script.
-3. Make the script executable:
-   ```
-   chmod +x install_update_tool.sh
-   ```
-4. Run the script with sudo:
-   ```
-   sudo ./install_update_tool.sh
+You can install this tool using apt. Follow these steps:
+
+1. Download and run the repository addition script:
+   	wget https://raw.githubusercontent.com/kayusboy2001/Kali_update_tool_Script/main/add-repo.sh
+ 	chmod +x add-repo.sh
+	sudo ./add-repo.sh
+
+2. Install the package:
+	sudo apt install kali-update-tool
    ```
 
 After installation, you should see a "System Update" icon in your applications menu.
 
 ## Usage
 
-Click the "System Update" icon in your applications menu. The tool will prompt for your sudo password, then show a progress bar as it updates and upgrades your system.
+After installation, you should see a "Kali Update Tool" icon in your applications menu. Click it to run the update tool.
+The tool will prompt for your sudo password, then show a progress bar as it updates and upgrades your system.
 
 ## Note
 

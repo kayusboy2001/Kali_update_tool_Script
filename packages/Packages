@@ -1,0 +1,16 @@
+Package: kali-update-tool
+Version: 1.0-1
+Architecture: all
+Maintainer: kayusboy2001 <your.email@example.com>
+Depends: zenity
+Filename: ./kali-update-tool_1.0-1.deb
+Size: 2112
+MD5sum: 1e3049f0a19236a791c3a0537437d576
+SHA1: 884026551f029fae23117369a8761e639c7b0ac8
+SHA256: 27132d6b059d010dc3dc2c3e1af816fcf1b048525c06646fc42f9c0aa9ca6878
+Section: utils
+Priority: optional
+Description: Graphical Kali Linux update tool
+ This tool provides a simple graphical interface for
+ running system updates on Kali Linux.
+
