@@ -6,21 +6,24 @@ if [ "$EUID" -ne 0 ]; then
     exit 1
 fi
 
-# Uninstall the package
-apt remove -y system-update-tool
+# Uninstall the package and remove any residual configuration files
+apt remove --purge -y system-update-tool
 
-# Remove any residual configuration files
-apt purge -y system-update-tool
-
-# Remove the custom repository files
-
-rm -f /etc/apt/sources.list.d/system-update-tool.list
+# Remove the custom repository file if it exists
+if [ -f /etc/apt/sources.list.d/system-update-tool.list ]; then
+    rm -f /etc/apt/sources.list.d/system-update-tool.list
+    echo "Removed custom repository file."
+else
+    echo "Custom repository file not found."
+fi
 
 # Remove the script from /usr/local/bin
-rm -f /usr/local/bin/system-update.sh
-
-# Update package lists
-apt update
+if [ -f /usr/local/bin/system-update.sh ]; then
+    rm -f /usr/local/bin/system-update.sh
+    echo "Removed system-update.sh script."
+else
+    echo "system-update.sh script not found."
+fi
 
 # Clean up any unnecessary packages
 apt autoremove -y
