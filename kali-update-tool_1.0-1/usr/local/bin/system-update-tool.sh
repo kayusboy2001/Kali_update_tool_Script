@@ -18,12 +18,19 @@ fi
 
 # Install required packages
 print_color $GREEN "Installing required packages..."
-apt-get update
-apt-get install -y zenity
+if ! apt-get update; then
+    print_color $RED "Failed to update package list."
+    exit 1
+fi
+
+if ! apt-get install -y zenity; then
+    print_color $RED "Failed to install zenity."
+    exit 1
+fi
 
 # Create the update script
 print_color $GREEN "Creating update script..."
-cat > /usr/local/bin/system-update.sh << EOL
+cat > /usr/local/bin/system-update.sh << 'EOL'
 #!/bin/bash
 
 # Function to update the progress bar
